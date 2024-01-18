@@ -246,7 +246,7 @@ Route30FruitTree2:
 	fruittree FRUITTREE_ROUTE_30_2
 
 Route30HiddenPotion:
-	hiddenitem POTION, EVENT_ROUTE_30_HIDDEN_POTION
+	itemball POTION, EVENT_ROUTE_30_HIDDEN_POTION
 
 Route30_JoeysRattataAttacksMovement:
 	fix_facing
@@ -418,7 +418,6 @@ Route30_MapEvents:
 	bg_event 13, 29, BGEVENT_READ, MrPokemonsHouseDirectionsSign
 	bg_event 15,  5, BGEVENT_READ, MrPokemonsHouseSign
 	bg_event  3, 21, BGEVENT_READ, Route30TrainerTips
-	bg_event 14,  9, BGEVENT_ITEM, Route30HiddenPotion
 
 	def_object_events
 	object_event  5, 26, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, YoungsterJoey_ImportantBattleScript, EVENT_ROUTE_30_BATTLE
@@ -432,3 +431,4 @@ Route30_MapEvents:
 	object_event 11,  5, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30FruitTree2, -1
 	object_event  2, 13, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route30CooltrainerFScript, -1
 	object_event  8, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route30Antidote, EVENT_ROUTE_30_ANTIDOTE
+	object_event 14, 9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, o, Route30HiddenPotion, EVENT_ROUTE_30_HIDDEN_POTION
