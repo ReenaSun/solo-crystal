@@ -232,7 +232,7 @@ OlivinePortCooltrainerFScript:
 	end
 
 OlivinePortHiddenProtein:
-	hiddenitem PROTEIN, EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
+	itemball PROTEIN, EVENT_OLIVINE_PORT_HIDDEN_PROTEIN
 
 OlivinePortEnterFastShipMovement:
 	step DOWN
@@ -393,7 +393,6 @@ OlivinePort_MapEvents:
 	coord_event  7, 15, SCENE_OLIVINEPORT_ASK_ENTER_SHIP, OlivinePortWalkUpToShipScript
 
 	def_bg_events
-	bg_event  1, 22, BGEVENT_ITEM, OlivinePortHiddenProtein
 
 	def_object_events
 	object_event  7, 23, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortSailorAtGangwayScript, EVENT_OLIVINE_PORT_SAILOR_AT_GANGWAY
@@ -403,3 +402,4 @@ OlivinePort_MapEvents:
 	object_event 13, 14, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortFishingGuru2Script, EVENT_OLIVINE_PORT_SPRITES_BEFORE_HALL_OF_FAME
 	object_event  4, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortYoungsterScript, EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME
 	object_event 11, 15, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivinePortCooltrainerFScript, EVENT_OLIVINE_PORT_SPRITES_AFTER_HALL_OF_FAME
+	object_event  1,  22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, OlivinePortHiddenProtein, EVENT_OLIVINE_PORT_HIDDEN_PROTEIN

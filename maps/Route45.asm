@@ -310,7 +310,7 @@ Route45MaxPotion:
 	itemball MAX_POTION
 
 Route45HiddenPpUp:
-	hiddenitem PP_UP, EVENT_ROUTE_45_HIDDEN_PP_UP
+	itemball PP_UP, EVENT_ROUTE_45_HIDDEN_PP_UP
 
 HikerErikSeenText:
 	text "Be prepared for"
@@ -539,7 +539,6 @@ Route45_MapEvents:
 
 	def_bg_events
 	bg_event 10,  4, BGEVENT_READ, Route45Sign
-	bg_event 13, 80, BGEVENT_ITEM, Route45HiddenPpUp
 
 	def_object_events
 	object_event 10, 16, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerHikerErik, -1
@@ -555,3 +554,4 @@ Route45_MapEvents:
 	object_event  6, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45Elixer, EVENT_ROUTE_45_ELIXER
 	object_event  7, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45MaxPotion, EVENT_ROUTE_45_MAX_POTION
 	object_event  4, 70, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TrainerCamperQuentin, -1
+	object_event  13, 80, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route45HiddenPpUp, EVENT_ROUTE_45_HIDDEN_PP_UP

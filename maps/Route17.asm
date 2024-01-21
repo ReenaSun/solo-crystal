@@ -60,10 +60,10 @@ TrainerBikerGlenn:
 	end
 
 Route17HiddenMaxEther:
-	hiddenitem MAX_ETHER, EVENT_ROUTE_17_HIDDEN_MAX_ETHER
+	itemball MAX_ETHER, EVENT_ROUTE_17_HIDDEN_MAX_ETHER
 
 Route17HiddenMaxElixer:
-	hiddenitem MAX_ELIXER, EVENT_ROUTE_17_HIDDEN_MAX_ELIXER
+	itemball MAX_ELIXER, EVENT_ROUTE_17_HIDDEN_MAX_ELIXER
 
 BikerRileySeenText:
 	text "Hey, you! You're"
@@ -140,11 +140,12 @@ Route17_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  9, 54, BGEVENT_ITEM, Route17HiddenMaxEther
-	bg_event  8, 77, BGEVENT_ITEM, Route17HiddenMaxElixer
+
 
 	def_object_events
 	object_event  4, 17, SPRITE_BIKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerBikerRiley, -1
 	object_event  9, 68, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerBikerJoel, -1
 	object_event  3, 53, SPRITE_BIKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBikerGlenn, -1
 	object_event  6, 80, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerBikerCharles, -1
+	object_event 9, 54, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route17HiddenMaxEther, EVENT_ROUTE_17_HIDDEN_MAX_ETHER
+	object_event 8, 77, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route17HiddenMaxElixer, EVENT_ROUTE_17_HIDDEN_MAX_ELIXER

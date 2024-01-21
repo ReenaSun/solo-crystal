@@ -13,7 +13,7 @@ TinTower5FHiddenFullRestore:
 	hiddenitem FULL_RESTORE, EVENT_TIN_TOWER_5F_HIDDEN_FULL_RESTORE
 
 TinTower5FHiddenCarbos:
-	hiddenitem CARBOS, EVENT_TIN_TOWER_5F_HIDDEN_CARBOS
+	itemball CARBOS, EVENT_TIN_TOWER_5F_HIDDEN_CARBOS
 
 TinTower5F_MapEvents:
 	db 0, 0 ; filler
@@ -28,7 +28,7 @@ TinTower5F_MapEvents:
 
 	def_bg_events
 	bg_event 16, 14, BGEVENT_ITEM, TinTower5FHiddenFullRestore
-	bg_event  3, 15, BGEVENT_ITEM, TinTower5FHiddenCarbos
 
 	def_object_events
 	object_event  9,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TinTower5FRareCandy, EVENT_TIN_TOWER_5F_RARE_CANDY
+	object_event  9,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TinTower5FHiddenCarbos, EVENT_TIN_TOWER_5F_HIDDEN_CARBOS

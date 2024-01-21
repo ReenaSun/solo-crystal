@@ -21,7 +21,7 @@ IcePathB2FMahoganySideMaxPotion:
 	itemball MAX_POTION
 
 IcePathB2FMahoganySideHiddenCarbos:
-	hiddenitem CARBOS, EVENT_ICE_PATH_B2F_MAHOGANY_SIDE_HIDDEN_CARBOS
+	itemball CARBOS, EVENT_ICE_PATH_B2F_MAHOGANY_SIDE_HIDDEN_CARBOS
 
 IcePathB2FMahoganySideBoulderText:
 	text "It's immovably"
@@ -42,7 +42,6 @@ IcePathB2FMahoganySide_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  0, 17, BGEVENT_ITEM, IcePathB2FMahoganySideHiddenCarbos
 
 	def_object_events
 	object_event 11,  3, SPRITE_BOULDER, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IcePathB2FMahoganySideBoulder, EVENT_BOULDER_IN_ICE_PATH_1A
@@ -51,3 +50,4 @@ IcePathB2FMahoganySide_MapEvents:
 	object_event 12, 13, SPRITE_BOULDER, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IcePathB2FMahoganySideBoulder, EVENT_BOULDER_IN_ICE_PATH_4A
 	object_event  8,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IcePathB2FMahoganySideFullHeal, EVENT_ICE_PATH_B2F_MAHOGANY_SIDE_FULL_HEAL
 	object_event  0,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IcePathB2FMahoganySideMaxPotion, EVENT_ICE_PATH_B2F_MAHOGANY_SIDE_MAX_POTION
+	object_event  0,  17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, IcePathB2FMahoganySideHiddenCarbos, EVENT_ICE_PATH_B2F_MAHOGANY_SIDE_HIDDEN_CARBOS

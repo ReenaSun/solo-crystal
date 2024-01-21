@@ -7,7 +7,7 @@ Route28Sign:
 	jumptext Route28SignText
 
 Route28HiddenRareCandy:
-	hiddenitem RARE_CANDY, EVENT_ROUTE_28_HIDDEN_RARE_CANDY
+	itemball RARE_CANDY, EVENT_ROUTE_28_HIDDEN_RARE_CANDY
 
 Route28SignText:
 	text "ROUTE 28"
@@ -24,6 +24,6 @@ Route28_MapEvents:
 
 	def_bg_events
 	bg_event 31,  5, BGEVENT_READ, Route28Sign
-	bg_event 25,  2, BGEVENT_ITEM, Route28HiddenRareCandy
 
 	def_object_events
+	object_event 25, 2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route28HiddenRareCandy, EVENT_ROUTE_28_HIDDEN_RARE_CANDY

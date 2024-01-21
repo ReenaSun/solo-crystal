@@ -81,7 +81,7 @@ Route9Sign:
 	jumptext Route9SignText
 
 Route9HiddenEther:
-	hiddenitem ETHER, EVENT_ROUTE_9_HIDDEN_ETHER
+	itemball ETHER, EVENT_ROUTE_9_HIDDEN_ETHER
 
 CamperDeanSeenText:
 	text "I came to explore"
@@ -213,7 +213,6 @@ Route9_MapEvents:
 
 	def_bg_events
 	bg_event 15,  7, BGEVENT_READ, Route9Sign
-	bg_event 41, 15, BGEVENT_ITEM, Route9HiddenEther
 
 	def_object_events
 	object_event 23, 11, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerCamperDean, -1
@@ -222,3 +221,4 @@ Route9_MapEvents:
 	object_event 12, 15, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerPicnickerEdna, -1
 	object_event 28,  3, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerHikerTim, -1
 	object_event 36, 15, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerHikerSidney, -1
+	object_event 41, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route9HiddenEther, EVENT_ROUTE_9_HIDDEN_ETHER

@@ -486,7 +486,7 @@ Route34Nugget:
 	itemball NUGGET
 
 Route34HiddenRareCandy:
-	hiddenitem RARE_CANDY, EVENT_ROUTE_34_HIDDEN_RARE_CANDY
+	itemball RARE_CANDY, EVENT_ROUTE_34_HIDDEN_RARE_CANDY
 
 Route34HiddenSuperPotion:
 	hiddenitem SUPER_POTION, EVENT_ROUTE_34_HIDDEN_SUPER_POTION
@@ -774,7 +774,6 @@ Route34_MapEvents:
 	bg_event 12,  6, BGEVENT_READ, Route34Sign
 	bg_event 13, 33, BGEVENT_READ, Route34TrainerTips
 	bg_event 10, 13, BGEVENT_READ, DayCareSign
-	bg_event  8, 32, BGEVENT_ITEM, Route34HiddenRareCandy
 	bg_event 17, 19, BGEVENT_ITEM, Route34HiddenSuperPotion
 
 	def_object_events
@@ -791,3 +790,4 @@ Route34_MapEvents:
 	object_event  3, 48, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerfJenn, -1
 	object_event  6, 51, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerfKate, -1
 	object_event  7, 30, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route34Nugget, EVENT_ROUTE_34_NUGGET
+	object_event  8, 32, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route34HiddenRareCandy, EVENT_ROUTE_34_HIDDEN_RARE_CANDY

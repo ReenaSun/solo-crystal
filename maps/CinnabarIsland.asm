@@ -33,7 +33,7 @@ CinnabarIslandPokecenterSign:
 	jumpstd PokecenterSignScript
 
 CinnabarIslandHiddenRareCandy:
-	hiddenitem RARE_CANDY, EVENT_CINNABAR_ISLAND_HIDDEN_RARE_CANDY
+	itemball RARE_CANDY, EVENT_CINNABAR_ISLAND_HIDDEN_RARE_CANDY
 
 CinnabarIslandBlueTeleport:
 	teleport_from
@@ -137,7 +137,7 @@ CinnabarIsland_MapEvents:
 	bg_event 12, 11, BGEVENT_READ, CinnabarIslandPokecenterSign
 	bg_event  9, 11, BGEVENT_READ, CinnabarIslandGymSign
 	bg_event  7,  7, BGEVENT_READ, CinnabarIslandSign
-	bg_event  9,  1, BGEVENT_ITEM, CinnabarIslandHiddenRareCandy
 
 	def_object_events
 	object_event  9,  6, SPRITE_BLUE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CinnabarIslandBlue, EVENT_BLUE_IN_CINNABAR
+	object_event 9, 1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CinnabarIslandHiddenRareCandy, EVENT_CINNABAR_ISLAND_HIDDEN_RARE_CANDY

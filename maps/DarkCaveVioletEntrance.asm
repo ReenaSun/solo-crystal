@@ -29,7 +29,7 @@ DarkCaveVioletEntranceRock:
 	jumpstd SmashRockScript
 
 DarkCaveVioletEntranceHiddenElixer:
-	hiddenitem ELIXER, EVENT_DARK_CAVE_VIOLET_ENTRANCE_HIDDEN_ELIXER
+	itemball ELIXER, EVENT_DARK_CAVE_VIOLET_ENTRANCE_HIDDEN_ELIXER
 
 DarkCaveVioletEntrance_MapEvents:
 	db 0, 0 ; filler
@@ -42,7 +42,6 @@ DarkCaveVioletEntrance_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event 26,  3, BGEVENT_ITEM, DarkCaveVioletEntranceHiddenElixer
 
 	def_object_events
 	object_event  6,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntrancePotion, EVENT_DARK_CAVE_VIOLET_ENTRANCE_POTION
@@ -53,3 +52,4 @@ DarkCaveVioletEntrance_MapEvents:
 	object_event 36, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceFullHeal, EVENT_DARK_CAVE_VIOLET_ENTRANCE_FULL_HEAL
 	object_event 35,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceHyperPotion, EVENT_DARK_CAVE_VIOLET_ENTRANCE_HYPER_POTION
 	object_event 30, 28, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceDireHit, EVENT_DARK_CAVE_VIOLET_ENTRANCE_DIRE_HIT
+	object_event 26, 3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DarkCaveVioletEntranceHiddenElixer, EVENT_DARK_CAVE_VIOLET_ENTRANCE_HIDDEN_ELIXER

@@ -187,7 +187,7 @@ DragonsDenB1FHiddenMaxPotion:
 	hiddenitem MAX_POTION, EVENT_DRAGONS_DEN_B1F_HIDDEN_MAX_POTION
 
 DragonsDenB1FHiddenMaxElixer:
-	hiddenitem MAX_ELIXER, EVENT_DRAGONS_DEN_B1F_HIDDEN_MAX_ELIXER
+	itemball MAX_ELIXER, EVENT_DRAGONS_DEN_B1F_HIDDEN_MAX_ELIXER
 
 MovementDragonsDen_ClairWalksToYou:
 	slow_step RIGHT
@@ -418,7 +418,6 @@ DragonsDenB1F_MapEvents:
 	bg_event 18, 24, BGEVENT_READ, DragonShrineSignpost
 	bg_event 33, 29, BGEVENT_ITEM, DragonsDenB1FHiddenRevive
 	bg_event 21, 17, BGEVENT_ITEM, DragonsDenB1FHiddenMaxPotion
-	bg_event 31, 15, BGEVENT_ITEM, DragonsDenB1FHiddenMaxElixer
 
 	def_object_events
 	object_event 35, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DragonsDenB1FDragonFangScript, EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
@@ -430,3 +429,4 @@ DragonsDenB1F_MapEvents:
 	object_event  4, 18, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsLeaandpia2, -1
 	object_event 30,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonsDenB1FCalcium, EVENT_DRAGONS_DEN_B1F_CALCIUM
 	object_event  5, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonsDenB1FMaxElixer, EVENT_DRAGONS_DEN_B1F_MAX_ELIXER
+	object_event  31, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonsDenB1FHiddenMaxElixer, EVENT_DRAGONS_DEN_B1F_HIDDEN_MAX_ELIXER

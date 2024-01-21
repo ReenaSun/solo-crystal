@@ -129,7 +129,7 @@ BurnedTower1FRock:
 	jumpstd SmashRockScript
 
 BurnedTower1FHiddenEther:
-	hiddenitem ETHER, EVENT_BURNED_TOWER_1F_HIDDEN_ETHER
+	itemball ETHER, EVENT_BURNED_TOWER_1F_HIDDEN_ETHER
 
 BurnedTower1FHiddenUltraBall:
 	hiddenitem ULTRA_BALL, EVENT_BURNED_TOWER_1F_HIDDEN_ULTRA_BALL
@@ -298,7 +298,6 @@ BurnedTower1F_MapEvents:
 	coord_event 11,  9, SCENE_BURNEDTOWER1F_RIVAL_BATTLE, BurnedTowerRivalBattleScript
 
 	def_bg_events
-	bg_event  8,  7, BGEVENT_ITEM, BurnedTower1FHiddenEther
 	bg_event 13, 11, BGEVENT_ITEM, BurnedTower1FHiddenUltraBall
 
 	def_object_events
@@ -307,3 +306,4 @@ BurnedTower1F_MapEvents:
 	object_event  8,  9, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, ObjectEvent, EVENT_RIVAL_BURNED_TOWER
 	object_event 14, 14, SPRITE_MORTY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, BurnedTower1FMortyScript, EVENT_BURNED_TOWER_MORTY
 	object_event 14,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, BurnedTower1FHPUp, EVENT_BURNED_TOWER_1F_HP_UP
+	object_event 8,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, BurnedTower1FHiddenEther, EVENT_BURNED_TOWER_1F_HIDDEN_ETHER

@@ -233,7 +233,7 @@ LakeOfRageHiddenFullRestore:
 	hiddenitem FULL_RESTORE, EVENT_LAKE_OF_RAGE_HIDDEN_FULL_RESTORE
 
 LakeOfRageHiddenRareCandy:
-	hiddenitem RARE_CANDY, EVENT_LAKE_OF_RAGE_HIDDEN_RARE_CANDY
+	itemball RARE_CANDY, EVENT_LAKE_OF_RAGE_HIDDEN_RARE_CANDY
 
 LakeOfRageHiddenMaxPotion:
 	hiddenitem MAX_POTION, EVENT_LAKE_OF_RAGE_HIDDEN_MAX_POTION
@@ -504,7 +504,6 @@ LakeOfRage_MapEvents:
 	bg_event 21, 27, BGEVENT_READ, LakeOfRageSign
 	bg_event 25, 31, BGEVENT_READ, MagikarpHouseSignScript
 	bg_event 11, 28, BGEVENT_ITEM, LakeOfRageHiddenFullRestore
-	bg_event  4,  4, BGEVENT_ITEM, LakeOfRageHiddenRareCandy
 	bg_event 35,  5, BGEVENT_ITEM, LakeOfRageHiddenMaxPotion
 
 	def_object_events
@@ -520,3 +519,4 @@ LakeOfRage_MapEvents:
 	object_event  4,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, WesleyScript, EVENT_LAKE_OF_RAGE_WESLEY_OF_WEDNESDAY
 	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageElixer, EVENT_LAKE_OF_RAGE_ELIXER
 	object_event 35,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageTMDetect, EVENT_LAKE_OF_RAGE_TM_DETECT
+	object_event 4, 4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageHiddenRareCandy, EVENT_LAKE_OF_RAGE_HIDDEN_RARE_CANDY
