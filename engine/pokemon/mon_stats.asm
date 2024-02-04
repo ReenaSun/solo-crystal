@@ -191,7 +191,7 @@ GetGender:
 	or b
 	ld b, a  ; ~(ATK DV & 1) << 1 | (Def DV & 1) << 2
 ; Special DV
-	ld a, [h1]
+	ld a, [hl]
 	cpl
 	and $1
 	add a
